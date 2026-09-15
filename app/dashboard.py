@@ -1,3 +1,4 @@
+from collections.abc import Callable
 from functools import partial
 
 import numpy as np
@@ -7,7 +8,6 @@ from face_database import FaceDatabase
 from insightface.app import FaceAnalysis
 from stream import RecognitionProcessor, RegistrationProcessor
 from streamlit_webrtc import webrtc_streamer
-from collections.abc import Callable
 
 # --------------------------------------------------
 # InsightFace
