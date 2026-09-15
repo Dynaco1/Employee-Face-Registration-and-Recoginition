@@ -7,7 +7,7 @@ from face_database import FaceDatabase
 from insightface.app import FaceAnalysis
 from stream import RecognitionProcessor, RegistrationProcessor
 from streamlit_webrtc import webrtc_streamer
-from typing import Callable
+from collections.abc import Callable
 
 # --------------------------------------------------
 # InsightFace
