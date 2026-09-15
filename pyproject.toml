@@ -1,0 +1,27 @@
+[project]
+name = "app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "av>=17.1.0",
+    "faiss-cpu==1.15.0",
+    "insightface==2.0",
+    "onnxruntime==1.30.0",
+    "opencv-python==5.0.0.93",
+    "streamlit==1.63.0",
+    "streamlit-webrtc==0.77.0",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=2.3.1",
+    "ruff>=0.16.7",
+]
+
+
+[tool.mypy]
+[[tool.mypy.overrides]]
+module = ["insightface", "insightface.*"]
+ignore_missing_imports = true
